@@ -1,4 +1,4 @@
- {
+{
   "name": "@hexlet/code",
   "version": "1.0.0",
   "tupe": "module",
@@ -12,12 +12,15 @@
     "url": "git+https://github.com/Surikat21/frontend-project-44.git"
   },
   "bin": {
-	    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Surikat21/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Surikat21/frontend-project-44#readme"
+  "homepage": "https://github.com/Surikat21/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
