@@ -10,4 +10,4 @@ publish:
 lint:
 	npx eslint .
 
-.PHONY: bin/brain-games.js
+
