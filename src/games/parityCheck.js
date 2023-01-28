@@ -1,11 +1,7 @@
 import readlineSync from 'readline-sync';
 import responsecheck from './responsecheck.js';
 import greetings from '../cli.js';
-
-const getRandomNumber = () => {
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
-  return randomNumber;
-};
+import getRandomNumber from '../getRandomNumber.js';
 
 const isEven = (number) => number % 2 === 0; // проверка на четность
 
