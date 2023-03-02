@@ -1,6 +1,6 @@
-import readlineSync from 'readline-sync';
 import greetings from '../cli.js';
 import getRandomNumber from '../getRandomNumber.js';
+import examination from '../examination.js';
 
 const userName = greetings();
 
@@ -25,24 +25,14 @@ function decision(expression) {
   } if (operator === '*') {
     return number1 * number2;
   }
-}
+};
+
 export default function calc() {
   console.log('What is the result of the expression?'); // вывод условия игры
 
-  for (let i = 0; i < 3; i += 1) {
+  function examination(generateRound) {
     const question = getRandomExpression(); // ищем рандомный пример
-
-    const userAnswer = readlineSync.question('Your answer: '); // интерактивный разговор с пользователем
-
     const correctAnswer = decision(question);
-
-    if (userAnswer !== String(correctAnswer)) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      // break;
-      console.log(`Let's try again, ${userName}!`);
-      return;
-    }
-    console.log('Correct!');
+    return [question, correctAnswer];
   }
-  console.log(`Congratulations, ${userName}!`);
 }
