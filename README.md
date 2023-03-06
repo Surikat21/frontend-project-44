@@ -7,15 +7,73 @@
 - Node.js v18.12.1;
 - npm 8.19.2.
 
+## Brain-games:
+---
+«Mind Games» is a set of five brain—boosting games. Each game asks three questions. After three correct answers in a row, it is considered that the game is over.
+
+Presented games:
+- Calculator. Arithmetic expressions that need to be calculated.
+- Progression. Search for missing numbers in a sequence of numbers.
+- Definition of an even number.
+- Finding the Greatest Common Divisor.
+- Definition of a prime number.
+
+## Install:
+---
+```sh
+git clone https: https://github.com/Surikat21/frontend-project-44
+cd frontend-project-44
+make install
+npm install
+npm link
+```
+
 ## Games:
+---
+- ## Brain-calc
+> Starting the game
+```sh
+brain-calc
+```
+Presents
 
-- brain-even
-> Try to figure out number is even
+https://asciinema.org/a/5JiNLBxf5D8xj8fufbAJVdHeP
 
-https://asciinema.org/a/AllD81JClnRsNhTyyenjIcOBE
+- ## Brain-gcd
+> Starting the game
+```sh
+brain-gcd
+```
+Presents
 
-https://asciinema.org/a/CmcL9TFssBPxCsrXmvjQ5jvFn
+https://asciinema.org/a/kPKZF1CKLN9RmEU9pbjNJCyIT
 
-https://asciinema.org/a/0HhuFrGfbY436ncwgpA55QNPx
+- ## Brain-even
+> Starting the game
+```sh
+brain-even
+```
+Presents
 
-https://asciinema.org/a/TFTwdpLOKWAb6Lcz6qMncIdDo
+https://asciinema.org/a/mKQlPDOGcDYVi3ppWujzD5QLT
+
+- ## Brain-prime
+> Starting the game
+```sh
+brain-prime
+```
+Presents
+
+https://asciinema.org/a/ULoFeyrV4S3NLYKlmaUIKU9s3
+
+- ## Brain-progression
+> Starting the game
+```sh
+brain-progression
+```
+Presents
+
+https://asciinema.org/a/aBy4xmkjA018R6mY611ucO6cl
+
+
+

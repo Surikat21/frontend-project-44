@@ -1,15 +1,13 @@
-import greetings from '../cli.js';
 import getRandomNumber from '../getRandomNumber.js';
-import examination from '../examination.js';
+import getGame from '../examination.js';
 
-const userName = greetings();
+const taskGame = 'What is the result of the expression?';
 
 const getRandomExpression = () => {
   const arithmeticOperators = ['+', '-', '*'];
-  const number1 = getRandomNumber(); // ищем рандомное число
-  const number2 = getRandomNumber(); // ищем рандомное число
+  const number1 = getRandomNumber();
+  const number2 = getRandomNumber();
   const operator = arithmeticOperators[Math.floor(Math.random() * arithmeticOperators.length)];
-  console.log(`Question: ${number1} ${operator} ${number2}`); // выводим вопрос
   return `${number1} ${operator} ${number2}`;
 };
 function decision(expression) {
@@ -25,14 +23,14 @@ function decision(expression) {
   } if (operator === '*') {
     return number1 * number2;
   }
-};
+}
 
-export default function calc() {
-  console.log('What is the result of the expression?'); // вывод условия игры
+function startGame() {
+  const question = getRandomExpression();
+  const correctAnswer = decision(question);
+  return [question, correctAnswer];
+}
 
-  function examination(generateRound) {
-    const question = getRandomExpression(); // ищем рандомный пример
-    const correctAnswer = decision(question);
-    return [question, correctAnswer];
-  }
+export default function startCalc() {
+  getGame(taskGame, startGame);
 }
