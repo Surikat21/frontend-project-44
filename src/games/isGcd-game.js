@@ -1,5 +1,5 @@
 import getRandomNumber from '../getRandomNumber.js';
-import getGame from '../examination.js';
+import getGame from '../index.js';
 
 const taskGame = 'Find the greatest common divisor of given numbers.';
 
@@ -13,10 +13,10 @@ function nod(number1, number2) { // вычисление НОД
 }
 
 function startGame() {
-  const number1 = getRandomNumber(); // ищем рандомное число
-  const number2 = getRandomNumber(); // ищем рандомное число
+  const number1 = getRandomNumber(1, 10); // ищем рандомное число
+  const number2 = getRandomNumber(1, 10); // ищем рандомное число
   const question = `${number1} ${number2}`;
-  const correctAnswer = nod(number1, number2);
+  const correctAnswer = String(nod(number1, number2));
   return [question, correctAnswer];
 }
 

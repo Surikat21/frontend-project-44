@@ -1,4 +1,4 @@
-export default function getRandomNumber() {
-  const randomNumber = Math.floor(Math.random() * 10) + 1;
+export default function getRandomNumber(min, max) {
+  const randomNumber = Math.floor(Math.random() * (max - min) + min);
   return randomNumber;
 }

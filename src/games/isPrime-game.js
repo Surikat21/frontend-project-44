@@ -1,5 +1,5 @@
 import getRandomNumber from '../getRandomNumber.js';
-import getGame from '../examination.js';
+import getGame from '../index.js';
 
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
@@ -16,7 +16,7 @@ const isEven = (number) => { // проверка на простое число
 };
 
 function startGame() {
-  const number = getRandomNumber(); // ищем рандомное число
+  const number = getRandomNumber(1, 10); // ищем рандомное число
   const question = `${number}`;
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   return [question, correctAnswer];

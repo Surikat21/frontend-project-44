@@ -1,13 +1,13 @@
 import getRandomNumber from '../getRandomNumber.js';
-import getGame from '../examination.js';
+import getGame from '../index.js';
 
 const taskGame = 'What is the result of the expression?';
 
 const getRandomExpression = () => {
   const arithmeticOperators = ['+', '-', '*'];
-  const number1 = getRandomNumber();
-  const number2 = getRandomNumber();
-  const operator = arithmeticOperators[Math.floor(Math.random() * arithmeticOperators.length)];
+  const number1 = getRandomNumber(1, 10);
+  const number2 = getRandomNumber(1, 10);
+  const operator = arithmeticOperators[getRandomNumber(0, arithmeticOperators.length - 1)];
   return `${number1} ${operator} ${number2}`;
 };
 function decision(expression) {
@@ -27,7 +27,7 @@ function decision(expression) {
 
 function startGame() {
   const question = getRandomExpression();
-  const correctAnswer = decision(question);
+  const correctAnswer = String(decision(question));
   return [question, correctAnswer];
 }
 

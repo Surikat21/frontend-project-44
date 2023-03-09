@@ -1,12 +1,12 @@
 import getRandomNumber from '../getRandomNumber.js';
-import getGame from '../examination.js';
+import getGame from '../index.js';
 
 const taskGame = 'What number is missing in the progression?';
 
 function startGame() {
   const result = [];
-  const number1 = getRandomNumber(); // ищем рандомное число
-  const number2 = getRandomNumber(); // ищем рандомное число
+  const number1 = getRandomNumber(1, 10); // ищем рандомное число
+  const number2 = getRandomNumber(1, 10); // ищем рандомное число
   for (let a = 0; a < 9; a += 1) {
     result[0] = number1;
     result[a + 1] = result[a] + number2;
