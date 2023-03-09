@@ -1,5 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Surikat21/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Surikat21/frontend-project-44/actions)
+
 [![Maintainability](https://codeclimate.com/github/Surikat21/frontend-project-44/progress/maintainability)](https://codeclimate.com/github/Surikat21/frontend-project-44)
 
 
