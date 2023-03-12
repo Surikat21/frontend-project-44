@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Surikat21/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Surikat21/frontend-project-44/actions)
 
-[![Maintainability](https://codeclimate.com/github/Surikat21/frontend-project-44/progress/maintainability)](https://codeclimate.com/github/Surikat21/frontend-project-44)
+[![Maintainability](https://api.codeclimate.com/v1/badges/395fd7cd58e0446d8478/maintainability)](https://codeclimate.com/github/Surikat21/frontend-project-44/maintainability)
 
 
 ## System Requirements:
