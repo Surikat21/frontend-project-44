@@ -4,7 +4,7 @@ import getGame from '../index.js';
 const taskGame = 'What number is missing in the progression?';
 
 function startGame() {
-  const length = getRandomNumber(5, 10)
+  const length = getRandomNumber(5, 10);
   const result = [];
   const number1 = getRandomNumber(1, 10); // ищем рандомное число
   const number2 = getRandomNumber(1, 10); // ищем рандомное число
@@ -16,7 +16,7 @@ function startGame() {
   const randomIndex = getRandomNumber(0, result.length - 1);
   const hiddenNumberIndex = String(result[randomIndex]);
   result[randomIndex] = '..';
-  const question = `${result}`;
+  const question = `${result.join(' ')}`;
   const correctAnswer = hiddenNumberIndex;
   return [question, correctAnswer];
 }
