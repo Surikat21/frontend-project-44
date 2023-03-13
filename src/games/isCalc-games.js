@@ -23,6 +23,7 @@ function decision(expression) {
   } if (operator === '*') {
     return number1 * number2;
   }
+  return expression;
 }
 
 function startGame() {
