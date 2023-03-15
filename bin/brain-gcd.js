@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import startCommonDivisor from '../src/games/isGcd-game.js';
+import startCommonDivisor from '../src/games/gcd-game.js';
 
 startCommonDivisor();

@@ -10,28 +10,34 @@ const getRandomExpression = () => {
   const operator = arithmeticOperators[getRandomNumber(0, arithmeticOperators.length - 1)];
   return `${number1} ${operator} ${number2}`;
 };
-function decision(expression) {
+
+const calculation = (number1, number2, operator) => {
+  switch (operator) {
+    case '+':
+      return number1 + number2;
+    case '-':
+      return number1 - number2;
+    case '*':
+      return number1 * number2;
+    default:
+      throw new Error(`Unknown operator: ${operator}`);
+  }
+};
+
+const getDecision = (expression) => {
   const expressionParts = expression.split(' ');
   const number1 = Number(expressionParts[0]);
   const number2 = Number(expressionParts[2]);
   const operator = expressionParts[1];
+  return calculation(number1, number2, operator);
+};
 
-  if (operator === '-') {
-    return (number1 - number2);
-  } if (operator === '+') {
-    return number1 + number2;
-  } if (operator === '*') {
-    return number1 * number2;
-  }
-  return expression;
-}
-
-function startGame() {
+const startGame = () => {
   const question = getRandomExpression();
-  const correctAnswer = String(decision(question));
+  const correctAnswer = String(getDecision(question));
   return [question, correctAnswer];
-}
+};
 
-export default function startCalc() {
+export default () => {
   getGame(taskGame, startGame);
-}
+};

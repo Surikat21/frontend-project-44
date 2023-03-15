@@ -15,13 +15,13 @@ const isEven = (number) => { // проверка на простое число
   return true;
 };
 
-function startGame() {
+const startGame = () => {
   const number = getRandomNumber(1, 10); // ищем рандомное число
   const question = `${number}`;
   const correctAnswer = isEven(number) ? 'yes' : 'no';
   return [question, correctAnswer];
-}
+};
 
-export default function startPrimeNumber() {
+export default () => {
   getGame(taskGame, startGame);
-}
+};
